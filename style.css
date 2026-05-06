@@ -1,4 +1,4 @@
-  <style>
+
     /* ── ART DIRECTION ─────────────────────────────────────────────
        Concept: Scientific bridge-building. Quiet authority.
        Palette: Warm off-white surfaces + logo node colours as accents
@@ -361,4 +361,4 @@
       color:var(--color-primary);text-decoration:none;
       transition:gap var(--transition-interactive),color var(--transition-interactive);}
     .service-card-link:hover{color:var(--color-primary-hover);gap:var(--space-3);}
-  </style>
+ 
