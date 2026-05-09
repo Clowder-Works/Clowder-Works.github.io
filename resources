@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Clowder Works</title>
+  <meta name="description" content="Key publications, books, blogs and networks on inter- and transdisciplinary research, integration methods, and collaborative science." />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content reveal-clip">
+          <span class="hero-eyebrow">
+            <span class="hero-eyebrow-dot"></span>
+            Reading list
+          </span>
+          <h1>Resources</h1>
+          <p class="hero-subhead">Key publications, books, blogs, and networks on inter- and transdisciplinary research, integration methods, and collaborative science. Compiled May 2026.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- SECTION 1: INTEGRATION LEADERSHIP & EXPERTISE -->
+    <section>
+      <div class="container--default">
+        <p class="section-label fade-in">Integration leadership &amp; expertise</p>
+        <h2 class="section-title fade-in">The case for integration as a discipline</h2>
+
+        <div class="services-grid fade-in">
+
+          <div class="service-card" style="border-top-color:var(--color-node-blue); grid-column:auto; display:block;">
+            <p class="service-card-number">Paper &middot; <em>Sustainability Science</em> 20, 95–115 &middot; 2025 &middot; Open access</p>
+            <h3>"Herding Cats": Integrative Leadership Strategies in ITD Research Programs</h3>
+            <p>Deutsch, Björnsen Gurung, Defila, Di Giulio, Hoffmann &amp; Scholz. Drawn from in-depth study of three Swiss ITD research programs, this paper identifies six core leadership challenges: mastering complexity and ambiguity, lateral decision-making, ensuring accountability, setting boundaries, selecting suitable projects, and correcting misconceptions about what integration work entails. Makes a clear empirical case that leading an ITD programme is a specialist skill requiring distinct competencies — not generic research management.</p>
+            <a href="https://doi.org/10.1007/s11625-024-01585-4" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              DOI: 10.1007/s11625-024-01585-4
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-green); grid-column:auto; display:block;">
+            <p class="service-card-number">Paper &middot; <em>Humanities and Social Sciences Communications</em> 9, 1 &middot; 2022 &middot; Open access</p>
+            <h3>Integrate the Integrators! A Call for Establishing Academic Careers for Integration Experts</h3>
+            <p>Hoffmann, Deutsch, Thompson Klein &amp; O'Rourke (Nature Portfolio). Argues that despite integration being the central challenge of ITD research, academia offers no recognised career path for people who do it. Proposes four concrete remedies: a Community of Practice, empirical study of successful integration careers, dedicated funding lines, and sustained dialogue with universities and funders. The intellectual foundation of the ITD Alliance's working group on integration experts.</p>
+            <a href="https://doi.org/10.1057/s41599-022-01138-z" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              DOI: 10.1057/s41599-022-01138-z
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-purple); grid-column:auto; display:block;">
+            <p class="service-card-number">Blog post &middot; i2Insights &middot; June 2023 &middot; Free</p>
+            <h3>Towards a Theory of Change to Institutionalise Integration Experts and Expertise</h3>
+            <p>The Aeschiried Integrators. Maps a concrete pathway from the current situation — where integration expertise is largely invisible and career trajectories are blocked — to a future in which universities establish permanent positions for integration experts. Articulates specific milestones (2025: awareness among university leadership; 2032: critical mass of positions established), typologises cousin roles (knowledge brokers, boundary spanners, i2S specialists), and frames integration as a rigorous and distinct methodology.</p>
+            <a href="https://i2insights.org/2023/06/06/institutionalising-integration-expertise/" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Read on i2Insights
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-amber); grid-column:auto; display:block;">
+            <p class="service-card-number">Paper &middot; <em>PNAS</em> 121(32), e2402646121 &middot; 2024 &middot; Open access</p>
+            <h3>Slow Convergence: Career Impediments to Interdisciplinary Biomedical Research</h3>
+            <p>Berkes, Marion, Milojević &amp; Weinberg. Analyses 154,021 biomedical PhD holders over four decades to show that the most interdisciplinary researchers stop publishing within eight years — compared to over twenty years for disciplinary peers. Provides large-scale quantitative evidence that current career structures actively select against those who cross disciplinary boundaries, making the empirical case for structural change in how interdisciplinary research is supported and evaluated.</p>
+            <a href="https://doi.org/10.1073/pnas.2402646121" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              DOI: 10.1073/pnas.2402646121
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-red); grid-column:auto; display:block;">
+            <p class="service-card-number">Paper &middot; <em>Higher Education Research &amp; Development</em> &middot; 2024</p>
+            <h3>Why and How Academics Become Interdisciplinary Researchers Early in Their Careers</h3>
+            <p>Taylor et al. Qualitative study identifying six distinct pathways through which early- and mid-career researchers enter interdisciplinary work — all characterised by ad hoc navigation rather than deliberate institutional support. Finds that universities lack consistent approaches to developing interdisciplinary skills beyond isolated PhD programmes, and that this gap is most acutely felt in the early career stages when collaborative research norms are first being established.</p>
+            <a href="https://doi.org/10.1080/07294360.2024.2332255" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              DOI: 10.1080/07294360.2024.2332255
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-blue); grid-column:auto; display:block;">
+            <p class="service-card-number">Survey report &middot; Leiden Madtrics / LERU &middot; 2021 &middot; Free</p>
+            <h3>Skill Gaps of PhD Graduates: The Largest Gaps Are in Teamwork and Social Skills</h3>
+            <p>Survey of 2,193 recently graduated PhDs from Dutch universities, finding that the largest reported skills gaps are in teamwork, social skills, and project management — precisely the competencies required for collaborative, cross-disciplinary research. PhDs report being well-trained in discipline-specific methods but underprepared for the interpersonal and organisational dimensions of research careers in complex collaborative settings.</p>
+            <a href="https://www.leidenmadtrics.nl/articles/skill-gaps-of-phd-graduates" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Read report
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- SECTION 2: FRAMEWORKS & METHODS -->
+    <section class="integration-section">
+      <div class="container--default">
+        <p class="section-label fade-in">Frameworks &amp; methods</p>
+        <h2 class="section-title fade-in">How integration actually works</h2>
+
+        <div class="services-grid fade-in">
+
+          <div class="service-card" style="border-top-color:var(--color-node-green); grid-column:auto; display:block;">
+            <p class="service-card-number">Book &middot; ANU Press &middot; 2013 &middot; Free open-access e-book</p>
+            <h3>Disciplining Interdisciplinarity: Integration and Implementation Sciences for Researching Complex Real-World Problems</h3>
+            <p>Gabriele Bammer. Foundational text for the field of Integration and Implementation Sciences (i2S). Builds the case for a new research discipline — comparable to statistics in its breadth of application — dedicated to synthesising knowledge across disciplines, managing unknowns, and translating research into policy and practice change. The three core i2S domains and fifteen guiding questions provide the intellectual scaffold on which subsequent tools, frameworks, and training programmes in the field are built.</p>
+            <a href="https://doi.org/10.22459/DI.01.2013" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              DOI: 10.22459/DI.01.2013 &middot; Free e-book
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-purple); grid-column:auto; display:block;">
+            <p class="service-card-number">Blog post &middot; i2Insights &middot; April 2024 &middot; Free</p>
+            <h3>Integration and Implementation Sciences (i2S) 3.0: An Updated Framework</h3>
+            <p>Gabriele Bammer. The latest iteration of i2S, revised to reflect current thinking on addressing complex societal and environmental problems. Describes three domains of expertise — understanding problems comprehensively, supporting policy and practice change, and enabling effective interactions — and positions i2S specialists as the "statisticians of complexity". Shorter and more immediately usable than the 2013 book, and the best current entry point into the framework.</p>
+            <a href="https://i2insights.org/2024/04/16/i2s-updated-framework/" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Read on i2Insights
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-amber); grid-column:auto; display:block;">
+            <p class="service-card-number">Blog post &middot; i2Insights &middot; September 2021 &middot; Free</p>
+            <h3>Transdisciplinary Integration: A Multidimensional Interactive Process</h3>
+            <p>Fam, Thompson Klein, Hoffmann, Mitchell &amp; Pohl. An authoritative synthesis — written by leading figures in the field — of what integration actually means in transdisciplinary research: a multidimensional, iterative process of weaving, balancing, and accommodating different knowledge systems. Cuts through the vagueness that often surrounds the term and provides a shared vocabulary for designing, describing, and evaluating integration work in research projects.</p>
+            <a href="https://i2insights.org/2021/09/14/transdisciplinary-integration/" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Read on i2Insights
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-red); grid-column:auto; display:block;">
+            <p class="service-card-number">Blog post &middot; i2Insights &middot; May 2017 &middot; Free</p>
+            <h3>Methods for Integration in Transdisciplinary Research</h3>
+            <p>Bergmann et al. A structured catalogue of 43 integration methods grouped into seven epistemological classes — from conceptual clarification and joint problem framing to formal model building and process-based cooperation instruments. Establishes that integration is not improvised facilitation but a methodologically grounded practice with an identifiable repertoire of techniques that can be learned, adapted, and evaluated.</p>
+            <a href="https://i2insights.org/2017/05/09/transdisciplinary-integration-methods/" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Read on i2Insights
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card" style="border-top-color:var(--color-node-blue); grid-column:auto; display:block;">
+            <p class="service-card-number">Online toolbox &middot; td-net / Swiss Academies of Arts &amp; Sciences &middot; Free</p>
+            <h3>The td-net Toolbox for Co-Producing Knowledge</h3>
+            <p>Twenty tested tools for co-producing knowledge in transdisciplinary research, covering the full project lifecycle — from jointly framing problems with stakeholders to exploring pathways to impact. Developed by the Swiss Network for Transdisciplinary Research (td-net), tested across dozens of projects, and used in university and doctoral training internationally. Bridges the gap between abstract integration frameworks and day-to-day facilitation practice.</p>
+            <a href="https://naturalsciences.ch/co-producing-knowledge-explained/methods/td-net_toolbox" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Open toolbox
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- SECTION 3: NETWORKS, INITIATIVES & PRACTICE -->
+    <section>
+      <div class="container--default">
+        <p class="section-label fade-in">Networks, initiatives &amp; practice</p>
+        <h2 class="section-title fade-in">Community and institutional resources</h2>
+
+        <div class="pathways-grid fade-in">
+
+          <div class="pathway-item">
+            <div class="pathway-num" style="-webkit-text-stroke-color:var(--color-node-blue)">01</div>
+            <h3>ITD Alliance — Global Alliance for Inter- and Transdisciplinarity</h3>
+            <p>The global network connecting institutions, networks, and individuals working on ITD theory, method, and practice. Established in 2021, the Alliance organises working groups on pressing field-level questions — including Integration Experts and Expertise, and Toolkits &amp; Methods — and maintains curated resources covering journals, conferences, handbooks, and member publications. Open to institutions and individual members.</p>
+            <a href="https://itd-alliance.org" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Visit ITD Alliance
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="pathway-item">
+            <div class="pathway-num" style="-webkit-text-stroke-color:var(--color-node-green)">02</div>
+            <h3>ITD Alliance Working Group: Integration Experts and Expertise</h3>
+            <p>The active community developing the recognition, training, and institutional frameworks for integration expertise. Organised around three output-oriented projects: the Value Project (recognising contributions of integration experts), the LTTI Project (learning, teaching and training integration), and an Integration Tools Project. The primary forum where research, policy, and practice on integration expertise is being developed and consolidated.</p>
+            <a href="https://itd-alliance.org/working-groups/integration-experts/" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Visit working group
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="pathway-item">
+            <div class="pathway-num" style="-webkit-text-stroke-color:var(--color-node-purple)">03</div>
+            <h3>i2Insights — Integration and Implementation Insights</h3>
+            <p>A global, open, peer-curated blog and living resource repository publishing weekly contributions on concepts, methods, and frameworks for tackling complex real-world problems through research. Covers the full range of integration and implementation sciences topics — stakeholder engagement, knowledge synthesis, managing unknowns, supporting policy change, and more. The most actively maintained practical resource in the field.</p>
+            <a href="https://i2insights.org" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Visit i2Insights
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="pathway-item">
+            <div class="pathway-num" style="-webkit-text-stroke-color:var(--color-node-amber)">04</div>
+            <h3>SHAPE-ID: Shaping Interdisciplinary Practices in Europe</h3>
+            <p>EU Horizon 2020 project (2019–2021, led by Trinity College Dublin) that produced toolkits, policy briefs, and recommendations for integrating Arts, Humanities, and Social Sciences (AHSS) into interdisciplinary and transdisciplinary research. Identified persistent structural barriers to integration in European research settings and co-produced guidance for funders, universities, and research teams on how to make interdisciplinary collaboration more deliberate and effective.</p>
+            <a href="https://www.shapeidproject.eu" class="service-card-link" target="_blank" rel="noopener noreferrer">
+              Visit SHAPE-ID
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="pathway-item">
+            <div class="pathway-num" style="-webkit-text-stroke-color:var(--color-node-red)">05</div>
+            <h3>Collaboration and Team Science: A Field Guide</h3>
+            <p>National Cancer Institute (NCI), 2nd edition. Practical guide to building and managing collaborative science teams, grounded in the Science of Team Science (SciTS) field. Covers team formation, communication across disciplines, managing power and status dynamics, and assessing collaboration readiness. Widely used in health and biomedical research settings as onboarding material for new consortium members and as a framework for evaluating team function.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT -->
+    <section class="contact-section">
+      <div class="container--default">
+        <div class="contact-inner">
+          <div>
+            <h2>Something missing?</h2>
+            <p>If you know of a resource that belongs on this list, or would like to discuss any of these materials in the context of your project, we'd be glad to hear from you.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary contact-email-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span class="contact-email-text"></span>
+            </a>
+            <a href="index.html" class="btn btn-ghost">Back to home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+    fetch('nav.html').then(r=>r.text()).then(h=>{
+      document.getElementById('site-header').innerHTML=h;
+    });
+    fetch('footer.html').then(r=>r.text()).then(h=>{
+      document.getElementById('site-footer').innerHTML=h;
+    });
+
+    (function(){
+      const u='clowder.works', d='gmail.com';
+      document.querySelectorAll('.contact-email-link').forEach(a=>{
+        a.href='mailto:'+u+'@'+d;
+      });
+      document.querySelectorAll('.contact-email-text').forEach(el=>{
+        el.textContent=u+'[at]'+d;
+      });
+    })();
+  </script>
+</body>
+</html>
