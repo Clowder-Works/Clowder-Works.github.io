@@ -146,24 +146,32 @@
 
   <div id="site-footer"></div>
 
-  <script>
-    fetch('nav.html').then(r=>r.text()).then(h=>{
-      document.getElementById('site-header').innerHTML=h;
-    });
-    fetch('footer.html').then(r=>r.text()).then(h=>{
-      document.getElementById('site-footer').innerHTML=h;
-    });
+ <script src="nav-init.js" defer></script>
+<script>
+  // Prevent flash of wrong theme
+  (function(){
+    var t = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
 
-    (function(){
-      const u='clowder.works', d='gmail.com';
-      document.querySelectorAll('.contact-email-link').forEach(a=>{
-        a.href='mailto:'+u+'@'+d;
-      });
-      document.querySelectorAll('.contact-email-text').forEach(el=>{
-        el.textContent=u+'[at]'+d;
-      });
-    })();
-  </script>
+  Promise.all([
+    fetch('nav.html').then(r => r.text()),
+    fetch('footer.html').then(r => r.text())
+  ]).then(([navHTML, footerHTML]) => {
+    document.getElementById('site-header').innerHTML = navHTML;
+    document.getElementById('site-footer').innerHTML = footerHTML;
+    initNav(); // ← runs after nav is in the DOM
+
+    // Page-level email links
+    const u = 'clowder.works', d = 'gmail.com';
+    document.querySelectorAll('.contact-email-link').forEach(a => {
+      a.href = 'mailto:' + u + '@' + d;
+    });
+    document.querySelectorAll('.contact-email-text').forEach(el => {
+      el.textContent = u + '[at]' + d;
+    });
+  });
+</script>
 </body>
 </html>
 
