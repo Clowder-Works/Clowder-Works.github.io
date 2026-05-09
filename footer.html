@@ -1,0 +1,75 @@
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-wordmark" style="font-family:var(--font-display);">Clowder Works</span>
+        <p class="footer-tagline">Scientific integration for research teams and consortia. Based in the Netherlands.</p>
+        <div class="footer-email">
+          <a class="footer-email-link" aria-label="Email Clowder Works">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span class="footer-email-text"></span>
+          </a>
+        </div>
+        <div class="footer-nodes" aria-hidden="true">
+          <span class="footer-node" style="background:var(--color-node-blue)"></span>
+          <span class="footer-node" style="background:var(--color-node-green)"></span>
+          <span class="footer-node" style="background:var(--color-node-red)"></span>
+          <span class="footer-node" style="background:var(--color-node-amber)"></span>
+          <span class="footer-node" style="background:var(--color-node-purple)"></span>
+        </div>
+      </div>
+
+      <nav aria-label="Site map">
+        <p class="footer-col-title">Pages</p>
+        <ul class="footer-links" role="list">
+          <li><a href="digital-health.html">Digital Health</a></li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a class="footer-contact-link"></a></li>
+        </ul>
+        <div style="margin-top:var(--space-6);">
+          <p style="font-size:var(--text-xs);color:var(--color-text-faint);line-height:1.6;">
+            Registered in the Netherlands<br/>VAT registered
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Clowder Works. All rights reserved.</p>
+      <p class="footer-bottom-email">The Netherlands &nbsp;·&nbsp; </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Assemble all footer email links from parts — never in raw HTML
+  (function(){
+    const u='clowder.works', d='gmail.com';
+    const display=u+'[at]'+d;
+    const href='mailto:'+u+'@'+d;
+
+    document.querySelectorAll('.footer-email-link').forEach(a=>{
+      a.href=href;
+    });
+    document.querySelectorAll('.footer-email-text').forEach(el=>{
+      el.textContent=display;
+    });
+    document.querySelectorAll('.footer-contact-link').forEach(a=>{
+      a.href=href;
+      a.textContent=display;
+    });
+    document.querySelectorAll('.footer-bottom-email').forEach(p=>{
+      p.innerHTML+='<a href="'+href+'">'+display+'</a>';
+    });
+  })();
+</script>
