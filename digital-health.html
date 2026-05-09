@@ -1,121 +1,135 @@
-!-- Digital Health — Subpage Content Fragment -->
-<!-- Assumes site-wide tokens, base.css, fonts, nav and footer are loaded by the parent template -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Health — Clowder Works</title>
+  <meta name="description" content="Clowder Works brings direct experience and an established collaborative network to inter- and transdisciplinary digital health research." />
 
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
 
- 
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- ─── Hero ─── -->
-<section class="page-hero" aria-labelledby="dh-hero-heading">
-  <div class="container">
-    <span class="hero-label">Special Focus</span>
-    <h1 id="dh-hero-heading">
-      Digital<br><em>Health</em>
-    </h1>
-    <p class="hero-intro">
-      In inter- and transdisciplinary projects, meaningful results depend on whether disciplines can actually work together — across different languages, assumptions, and standards of evidence.
-    </p>
-  </div>
-</section>
+  <div id="site-header"></div>
 
+  <main id="main">
 
-<!-- ─── Content ─── -->
-<div class="main-content">
-  <div class="container">
-    <div class="content-grid">
-
-      <!-- The challenge -->
-      <div class="split-section reveal">
-        <span class="section-label">The challenge</span>
-        <div class="section-body">
-          <h2>Interdisciplinary by nature</h2>
-          <p>Digital health draws together clinicians, data scientists, engineers, mathematicians, and domain specialists — often working across deeply different languages, assumptions, and professional cultures. In projects that span these boundaries, <strong>deliberate integration work</strong> is what allows the different contributions to cohere into a shared scientific whole.</p>
-        </div>
+    <div class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Digital Health</span>
+        </nav>
+        <h1>Digital Health</h1>
       </div>
-
-      <!-- Pull quote -->
-      <div class="pull-quote reveal reveal-delay-1">
-        <blockquote>
-          "In inter- and transdisciplinary projects, integration is not a coordination task — it is a scientific one."
-        </blockquote>
-      </div>
-
-      <!-- Why it matters -->
-      <div class="split-section reveal">
-        <span class="section-label">Why it matters</span>
-        <div class="section-body">
-          <h2>Where connections break down</h2>
-          <p>In inter- and transdisciplinary digital health projects, data must be correctly interpreted across fields, models must reflect clinical reality, and results must be meaningful to both technical and medical communities. Without deliberate integration, these connections break down — not because the science is weak, but because the bridging work was never made explicit.</p>
-          <p>Making integration a defined function from the outset strengthens scientific coherence and prevents the misalignments that become delays, duplication, or incompatible outputs.</p>
-        </div>
-      </div>
-
-      <!-- Integration domains callout -->
-      <div class="callout-block reveal reveal-delay-1">
-        <p class="callout-eyebrow">Integration domains</p>
-        <h3>Where integration expertise matters</h3>
-        <p>Digital health projects span a wide range of integration challenges — from aligning technical and clinical perspectives to navigating the regulatory, ethical, and stakeholder dimensions that shape what research can actually deliver.</p>
-        <div class="callout-pillars">
-          <div class="pillar">
-            <div class="pillar-name">Clinical &amp; technical alignment</div>
-            <div class="pillar-desc">Bridging medical knowledge and computational methods</div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-name">Data infrastructure</div>
-            <div class="pillar-desc">Collection, curation, and interoperability</div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-name">Patient engagement</div>
-            <div class="pillar-desc">Integrating patient perspectives and lived experience</div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-name">Regulatory aspects</div>
-            <div class="pillar-desc">Navigating approval, compliance, and governance frameworks</div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-name">Ethics &amp; data protection</div>
-            <div class="pillar-desc">Privacy, consent, and responsible use of health data</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Our expertise -->
-      <div class="split-section reveal">
-        <span class="section-label">Our expertise</span>
-        <div class="section-body">
-          <h2>Experience and network</h2>
-          <p>Clowder Works has direct experience in digital health research — working at the intersection of computational medicine, medical data science, and research infrastructure. Our background in inter- and transdisciplinary collaboration, combined with an established network across clinical, technical, and academic communities, allows us to provide grounded insights that go beyond generic process support.</p>
-          <p>This is particularly relevant when it comes to direct team support: understanding what alignment looks like in practice, where integration challenges typically arise in digital health consortia, and how to address them constructively within ongoing project work.</p>
-        </div>
-      </div>
-
-    </div><!-- /content-grid -->
-  </div><!-- /container -->
-
-  <!-- CTA -->
-  <div class="cta-section">
-    <div class="container" style="max-width: var(--content-narrow);">
-      <h2>Working on a digital health project?</h2>
-      <p>Get in touch to discuss how Clowder Works can support integration in your consortium or proposal.</p>
-      <a href="mailto:clowder.works@gmail.com" class="btn-primary">
-        Contact us
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
     </div>
-  </div>
-
-</div><!-- /main-content -->
 
 
-<script>
-  // Scroll reveal — safe to run multiple times; uses unique class
-  (function(){
-    var els = document.querySelectorAll('.reveal');
-    if (!window.IntersectionObserver) { els.forEach(function(el){ el.classList.add('visible'); }); return; }
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-    els.forEach(function(el){ obs.observe(el); });
-  })();
-</script>
+    <!-- INTRO -->
+    <section class="profile-section" aria-labelledby="dh-intro-heading">
+      <div class="container--default">
+        <div class="section-text-block">
+          <p class="profile-eyebrow">Special Focus</p>
+          <h2 id="dh-intro-heading">Interdisciplinary by nature</h2>
+          <div class="profile-body">
+            <p>Digital health draws together clinicians, data scientists, engineers, mathematicians, and domain specialists — often working across deeply different languages, assumptions, and professional cultures. In projects that span these boundaries, deliberate integration work is what allows the different contributions to cohere into a shared scientific whole.</p>
+            <p>In inter- and transdisciplinary digital health projects, data must be correctly interpreted across fields, models must reflect clinical reality, and results must be meaningful to both technical and medical communities. Without deliberate integration, these connections break down — not because the science is weak, but because the bridging work was never made explicit.</p>
+            <p>Making integration a defined function from the outset strengthens scientific coherence and prevents the misalignments that become delays, duplication, or incompatible outputs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+
+    <!-- INTEGRATION DOMAINS -->
+    <section class="collaborators-section" aria-labelledby="dh-domains-heading">
+      <div class="container--default">
+        <div class="collab-header">
+          <h2 id="dh-domains-heading">Where integration expertise matters</h2>
+          <p>Digital health projects span a wide range of integration challenges — from aligning technical and clinical perspectives to navigating the regulatory, ethical, and stakeholder dimensions that shape what research can actually deliver.</p>
+        </div>
+        <div class="collab-tags" role="list">
+          <span class="collab-tag" role="listitem"><span class="collab-dot" style="background:var(--color-node-blue)"></span>Clinical &amp; technical alignment</span>
+          <span class="collab-tag" role="listitem"><span class="collab-dot" style="background:var(--color-node-green)"></span>Data infrastructure</span>
+          <span class="collab-tag" role="listitem"><span class="collab-dot" style="background:var(--color-node-purple)"></span>Patient engagement</span>
+          <span class="collab-tag" role="listitem"><span class="collab-dot" style="background:var(--color-node-amber)"></span>Regulatory aspects</span>
+          <span class="collab-tag" role="listitem"><span class="collab-dot" style="background:var(--color-node-red)"></span>Ethics &amp; data protection</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+
+    <!-- OUR EXPERIENCE -->
+    <section class="profile-section" aria-labelledby="dh-experience-heading">
+      <div class="container--default">
+        <div class="section-text-block">
+          <h2 id="dh-experience-heading">Experience and network</h2>
+          <div class="profile-body">
+            <p>Clowder Works has direct experience in digital health research — working at the intersection of computational medicine, medical data science, and research infrastructure. Our background in inter- and transdisciplinary collaboration, combined with an established network across clinical, technical, and academic communities, allows us to provide grounded insights that go beyond generic process support.</p>
+            <p>This is particularly relevant when it comes to direct team support: understanding what alignment looks like in practice, where integration challenges typically arise in digital health consortia, and how to address them constructively within ongoing project work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" aria-labelledby="dh-contact-heading">
+      <div class="container--default">
+        <div class="contact-inner">
+          <div>
+            <h2 id="dh-contact-heading">Working on a digital health project?</h2>
+            <p>Get in touch to discuss how Clowder Works can support integration in your consortium or proposal.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary contact-email-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span class="contact-email-text"></span>
+            </a>
+            <a href="index.html" class="btn btn-ghost">Back to home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+    // Load shared nav and footer
+    fetch('nav.html').then(r=>r.text()).then(h=>{
+      document.getElementById('site-header').innerHTML=h;
+    });
+    fetch('footer.html').then(r=>r.text()).then(h=>{
+      document.getElementById('site-footer').innerHTML=h;
+    });
+
+    // Assemble email links — never in raw HTML source
+    (function(){
+      const u='clowder.works', d='gmail.com';
+      const display=u+'[at]'+d;
+      const href='mailto:'+u+'@'+d;
+      document.querySelectorAll('.contact-email-link').forEach(a=>{
+        a.href=href;
+      });
+      document.querySelectorAll('.contact-email-text').forEach(el=>{
+        el.textContent=display;
+      });
+    })();
+  </script>
+</body>
+</html>
