@@ -1,75 +1,98 @@
-<footer class="site-footer" aria-label="Site footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="nav-wordmark" style="font-family:var(--font-display);">Clowder Works</span>
-        <p class="footer-tagline">Scientific integration for research teams and consortia. Based in the Netherlands.</p>
-        <div class="footer-email">
-          <a class="footer-email-link" aria-label="Email Clowder Works">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            <span class="footer-email-text"></span>
-          </a>
-        </div>
-        <div class="footer-nodes" aria-hidden="true">
-          <span class="footer-node" style="background:var(--color-node-blue)"></span>
-          <span class="footer-node" style="background:var(--color-node-green)"></span>
-          <span class="footer-node" style="background:var(--color-node-red)"></span>
-          <span class="footer-node" style="background:var(--color-node-amber)"></span>
-          <span class="footer-node" style="background:var(--color-node-purple)"></span>
-        </div>
+<header>
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Clowder Works home">
+        <img src="./assets/logo.png" alt="Clowder Works logo" width="180" height="180" />
+        <span class="nav-wordmark">Clowder Works</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="digital-health.html">Digital Health</a></li>
+        <li><a href="experts.html">Experts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a class="btn btn-primary nav-email-link">Get in touch</a>
       </div>
 
-      <nav aria-label="Site map">
-        <p class="footer-col-title">Pages</p>
-        <ul class="footer-links" role="list">
-          <li><a href="digital-health.html">Digital Health</a></li>
-          <li><a href="experts.html">Experts</a></li>
-          <li><a href="resources.html">Resources</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <p class="footer-col-title">Contact</p>
-        <ul class="footer-links" role="list">
-          <li><a class="footer-contact-link"></a></li>
-        </ul>
-        <div style="margin-top:var(--space-6);">
-          <p style="font-size:var(--text-xs);color:var(--color-text-faint);line-height:1.6;">
-            Registered in the Netherlands<br/>VAT registered
-          </p>
-        </div>
-      </div>
+      <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2026 Clowder Works. All rights reserved.</p>
-      <p class="footer-bottom-email">The Netherlands &nbsp;·&nbsp; </p>
+    <div class="nav-mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="digital-health.html">Digital Health</a>
+      <a href="experts.html">Experts</a>
+      <a href="resources.html">Resources</a>
+      <a class="btn btn-primary nav-email-link">Get in touch</a>
     </div>
-  </div>
-</footer>
+  </nav>
+</header>
 
 <script>
-  // Assemble all footer email links from parts — never in raw HTML
+  // Mark active nav link based on current page
+  (function(){
+    const links = document.querySelectorAll('.nav-links a, .nav-mobile-menu a');
+    const page = location.pathname.split('/').pop() || 'index.html';
+    links.forEach(a => {
+      if(a.getAttribute('href') === page) a.classList.add('active');
+    });
+  })();
+
+  // Assemble email links — never in raw HTML source
   (function(){
     const u='clowder.works', d='gmail.com';
-    const display=u+'[at]'+d;
-    const href='mailto:'+u+'@'+d;
+    document.querySelectorAll('.nav-email-link').forEach(a=>{
+      a.href='mailto:'+u+'@'+d;
+    });
+  })();
 
-    document.querySelectorAll('.footer-email-link').forEach(a=>{
-      a.href=href;
-    });
-    document.querySelectorAll('.footer-email-text').forEach(el=>{
-      el.textContent=display;
-    });
-    document.querySelectorAll('.footer-contact-link').forEach(a=>{
-      a.href=href;
-      a.textContent=display;
-    });
-    document.querySelectorAll('.footer-bottom-email').forEach(p=>{
-      p.innerHTML+='<a href="'+href+'">'+display+'</a>';
+  // Theme toggle
+  (function(){
+    const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+    let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+    r.setAttribute('data-theme',d);
+    function upd(){if(!t)return;
+      t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+      t.innerHTML=d==='dark'
+        ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';}
+    upd();
+    if(t)t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);upd();});
+  })();
+
+  // Sticky nav shadow
+  (function(){
+    const nav=document.getElementById('site-nav');
+    if(!nav)return;
+    const fn=()=>nav.classList.toggle('scrolled',window.scrollY>8);
+    window.addEventListener('scroll',fn,{passive:true});fn();
+  })();
+
+  // Mobile menu
+  (function(){
+    const btn=document.getElementById('mobile-menu-toggle');
+    const menu=document.getElementById('mobile-menu');
+    if(!btn||!menu)return;
+    btn.addEventListener('click',()=>{
+      const open=menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+      btn.innerHTML=open
+        ?'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+        :'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
     });
   })();
 </script>
