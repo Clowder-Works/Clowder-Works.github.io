@@ -361,4 +361,16 @@
       color:var(--color-primary);text-decoration:none;
       transition:gap var(--transition-interactive),color var(--transition-interactive);}
     .service-card-link:hover{color:var(--color-primary-hover);gap:var(--space-3);}
+/* ── NAV MOBILE FIX ── */
+@media (max-width: 768px) {
+  .nav-logo img {
+    width: clamp(32px, 10vw, 48px);
+    height: clamp(32px, 10vw, 48px);
+  }
+
+  .nav-mobile-toggle {
+    margin-inline-start: auto;
+    flex-shrink: 0;
+  }
+}
  
