@@ -38,7 +38,7 @@
               The challenge
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a class="btn btn-primary nav-email-link">
+            <a class="btn btn-ghost nav-email-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               Get in touch
             </a>
@@ -85,14 +85,10 @@
             </div>
             <div class="service-visual" aria-hidden="true">
               <svg viewBox="0 0 200 160" fill="none">
-                <!-- Two circles representing clinical and technical -->
                 <circle cx="72" cy="80" r="42" stroke="#4A72C4" stroke-width="1.5" opacity="0.3"/>
                 <circle cx="128" cy="80" r="42" stroke="#6EAA47" stroke-width="1.5" opacity="0.3"/>
-                <!-- Intersection fill -->
-                <path d="M100,42 A42,42 0 0,1 100,118 A42,42 0 0,1 100,42Z" fill="#4A72C4" opacity="0.07"/>
-                <!-- Centre dot -->
+                <path d="M100,42 A42,42 0 0,1 100,118 A42,42 0 0,0 100,42Z" fill="#4A72C4" opacity="0.07"/>
                 <circle cx="100" cy="80" r="5" fill="#4A72C4" opacity="0.7"/>
-                <!-- Labels -->
                 <circle cx="58" cy="68" r="3" fill="#4A72C4" opacity="0.4"/>
                 <circle cx="142" cy="68" r="3" fill="#6EAA47" opacity="0.4"/>
                 <circle cx="58" cy="92" r="3" fill="#4A72C4" opacity="0.3"/>
@@ -116,84 +112,4 @@
           <article class="service-card fade-in" style="border-top-color: var(--color-node-amber);">
             <p class="service-card-number">Regulation &amp; ethics</p>
             <h3>Governance across disciplines</h3>
-            <p>Approval, compliance, privacy, and consent requirements differ across fields and jurisdictions. Integration work maps these requirements early, before they become blockers.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ── EXPERTISE ── -->
-    <section class="integration-section fade-in" aria-labelledby="expertise-heading">
-      <div class="container--default">
-        <div class="integration-grid">
-          <div class="integration-prose">
-            <p class="section-label">Our expertise</p>
-            <h2 class="section-title" id="expertise-heading">Direct experience, not process support</h2>
-            <p>Clowder Works brings more than a methodology. Our lead expert holds doctorates in applied mathematics and theoretical medicine, with over a decade at the intersection of computational medicine, medical data science, and research infrastructure — including work with EOSC, NFDI, and the Medical Informatics Initiative.</p>
-            <p>This means we can work at peer level with both scientific and technical partners, understand where integration challenges typically arise in digital health consortia, and address them from inside the work rather than around it.</p>
-            <a href="experts.html" class="service-card-link">
-              Meet our experts
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-          <div class="integration-pull reveal-clip">
-            <blockquote>"Working at peer level with both scientific and technical partners — not around the work, but inside it."</blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ── CONTACT ── -->
-    <section class="contact-section" aria-labelledby="dh-contact-heading">
-      <div class="container--default">
-        <div class="contact-inner fade-in">
-          <div>
-            <h2 id="dh-contact-heading">Working on a digital health project?</h2>
-            <p>Get in touch to discuss how Clowder Works can support integration in your consortium or proposal.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn btn-primary nav-email-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Get in touch
-            </a>
-            <a href="index.html" class="btn btn-ghost">Back to home</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <div id="site-footer"></div>
-
-  <script src="nav-init.js" defer></script>
-  <script>
-    (function(){
-      var t = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', t);
-    })();
-
-    Promise.all([
-      fetch('nav.html').then(r => r.text()),
-      fetch('footer.html').then(r => r.text())
-    ]).then(([navHTML, footerHTML]) => {
-      document.getElementById('site-header').innerHTML = navHTML;
-      document.getElementById('site-footer').innerHTML = footerHTML;
-      initNav();
-
-      const u = 'clowder.works', d = 'gmail.com';
-      document.querySelectorAll('.nav-email-link').forEach(a => {
-        a.href = 'mailto:' + u + '@' + d;
-      });
-      document.querySelectorAll('.contact-email-text').forEach(el => {
-        el.textContent = u + '[at]' + d;
-      });
-    });
-  </script>
-</body>
-</html>
+            <p>Approval, compliance, 
