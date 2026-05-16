@@ -373,4 +373,10 @@
     flex-shrink: 0;
   }
 }
+
+/* Fix: ensure first service card is never double-width */
+.services-grid .service-card:first-child {
+  grid-column: auto;
+  display: block;
+}
  
