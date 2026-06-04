@@ -192,8 +192,14 @@ a, button, [role="button"], input, textarea, select {
 .site-nav.scrolled { border-bottom-color:var(--color-border); box-shadow:var(--shadow-sm); }
 .nav-inner { display:flex; align-items:center; gap:var(--space-6); padding-block:var(--space-3); padding-inline:clamp(var(--space-4),4vw,var(--space-12)); }
 .nav-logo { display:flex; align-items:center; gap:var(--space-3); text-decoration:none; color:var(--color-text); flex-shrink:0; }
-.nav-logo img { width:clamp(32px,6vw,48px); height:clamp(32px,6vw,48px); object-fit:contain; flex-shrink:0; }
+.nav-logo img { width:clamp(32px,6vw,48px); height:clamp(32px,6vw,48px); object-fit:contain; flex-shrink:0; transition:filter var(--transition-interactive); }
 .nav-wordmark { font-family:var(--font-display); font-size:var(--text-base); font-weight:500; white-space:nowrap; }
+
+/* Invert logo for dark backgrounds — works for black-on-transparent PNGs */
+[data-theme="dark"] .nav-logo img,
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .nav-logo img { filter: invert(1); } }
+[data-theme="dark"] .nav-logo img { filter: invert(1); }
+
 .nav-links { display:flex; align-items:center; gap:var(--space-6); list-style:none; padding:0; margin:0; }
 .nav-links a { font-size:var(--text-sm); font-weight:500; color:var(--color-text-muted); text-decoration:none; padding-bottom:2px; border-bottom:2px solid transparent; transition:color var(--transition-interactive),border-color var(--transition-interactive); }
 .nav-links a:hover { color:var(--color-text); }
@@ -210,7 +216,7 @@ a, button, [role="button"], input, textarea, select {
 .btn-primary:hover { background:var(--color-primary-hover); box-shadow:var(--shadow-sm); }
 .btn-primary:active { background:var(--color-primary-active); }
 .btn-ghost { background:transparent; color:var(--color-text-muted); border:1px solid var(--color-border); }
-.btn-ghost:hover { color:var(--color-text); background:var(--color-surface-offset); border-color:var(--color-text-faint); }
+.btn-ghost:hover { color:var(--color-text); background:var(--color-surface-offset); }
 
 .nav-mobile-toggle { display:none; align-items:center; justify-content:center; width:40px; height:40px; border-radius:var(--radius-md); color:var(--color-text-muted); margin-inline-start:auto; }
 .nav-mobile-toggle:hover { background:var(--color-surface-offset); }
