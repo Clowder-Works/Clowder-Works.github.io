@@ -252,7 +252,7 @@ a,button,[role="button"]{
 .section-nav-list{
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--color-divider);
   border: 1px solid var(--color-divider);
@@ -290,7 +290,12 @@ a,button,[role="button"]{
   transition: color var(--transition-interactive);
   max-width: unset;
 }
-@media(max-width:600px){
+@media(max-width:900px){
+  .section-nav-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width:500px){
   .section-nav-list{
     grid-template-columns: 1fr;
   }
