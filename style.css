@@ -423,6 +423,6 @@ hr.divider{border:none;border-top:1px solid var(--color-divider);margin:0;}
 
 /* ── NAV MOBILE FIX ── */
 @media(max-width:768px){
-  .nav-logo img{width:clamp(32px,10vw,48px);height:clamp(32px,10vw,48px);}
+  .nav-logo img{width:clamp(56px,15vw,72px);height:clamp(56px,15vw,72px);}
   .nav-mobile-toggle{margin-inline-start:auto;flex-shrink:0;}
 }
