@@ -3,4 +3,4 @@ Allow: /
 Disallow: /nav.html
 Disallow: /footer.html
 
-Sitemap: https://clowder-works.github.io/sitemap.xml
+Sitemap: https://clowder-works.nl/sitemap.xml
