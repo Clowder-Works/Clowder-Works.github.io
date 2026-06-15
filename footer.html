@@ -1,8 +1,10 @@
 <footer class="site-footer" aria-label="Site footer">
   <div class="container">
     <div class="footer-grid">
+
+      <!-- Brand -->
       <div class="footer-brand">
-        <span class="nav-wordmark" style="font-family:var(--font-display);">Clowder Works</span>
+        <span class="footer-wordmark">Clowder Works</span>
         <p class="footer-tagline">Scientific integration for research teams and consortia.</p>
         <div class="footer-nodes" aria-hidden="true">
           <span class="footer-node" style="background:var(--color-node-blue)"></span>
@@ -13,6 +15,7 @@
         </div>
       </div>
 
+      <!-- Pages -->
       <nav aria-label="Site map">
         <p class="footer-col-title">Pages</p>
         <ul class="footer-links" role="list">
@@ -22,34 +25,42 @@
         </ul>
       </nav>
 
+      <!-- Contact -->
       <div>
         <p class="footer-col-title">Contact</p>
         <ul class="footer-links" role="list">
-          <li><a class="footer-contact-link"></a></li>
           <li>
-            <a href="https://www.linkedin.com/company/clowder-works/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:var(--space-2);">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
+            <a class="footer-contact-link nav-email-link" aria-label="Email Clowder Works">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex-shrink:0">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span class="footer-contact-email-text"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/clowder-works/" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V9h4v1.5a6 6 0 0 1 2-1.5z"/>
+                <rect x="2" y="9" width="4" height="12" rx="1"/>
                 <circle cx="4" cy="4" r="2"/>
               </svg>
               LinkedIn
             </a>
           </li>
         </ul>
-        <p style="font-size:var(--text-xs);color:var(--color-text-faint);line-height:1.6;margin-top:var(--space-4);">
-          Registered in the Netherlands.<br/>VAT NL005457436B69
-        </p>
-        <div class="footer-email" style="margin-top:var(--space-4);">
-          <a class="footer-email-link nav-email-link" aria-label="Email Clowder Works">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Email
-          </a>
-        </div>
       </div>
+
+      <!-- Legal -->
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links footer-links--legal" role="list">
+          <li>Registered in the Netherlands</li>
+          <li>VAT NL005457436B69</li>
+          <li>PIC 895326011</li>
+        </ul>
+      </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -60,14 +71,10 @@
 
 <script>
   (function(){
-    const u='clowder.works', d='gmail.com';
-    const display=u+'[at]'+d;
-    const href='mailto:'+u+'@'+d;
-    document.querySelectorAll('.footer-email-link, .footer-contact-link').forEach(a=>{
-      a.href=href;
-    });
-    document.querySelectorAll('.footer-contact-link').forEach(a=>{
-      a.textContent=display;
-    });
+    const u = 'clowder.works', d = 'gmail.com';
+    const display = u + '[at]' + d;
+    const href = 'mailto:' + u + '@' + d;
+    document.querySelectorAll('.nav-email-link').forEach(a => { a.href = href; });
+    document.querySelectorAll('.footer-contact-email-text').forEach(el => { el.textContent = display; });
   })();
 </script>
